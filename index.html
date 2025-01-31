@@ -12,11 +12,25 @@
             background: linear-gradient(to right, #ff758c, #ff7eb3);
             color: white;
             margin: 0;
+            margin-top: 2rem;
             padding: 0;
         }
 
         h1 {
             margin-top: 20px;
+        }
+
+        .letter {
+            display: flex;
+            flex-direction: column;
+            text-align: left;
+            /* width: 50rem; */
+            font-size: large;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            line-height: 2rem;
+            margin: auto;
+            padding: 1rem;
+
         }
 
         .gallery {
@@ -86,7 +100,17 @@
 
 <body>
 
-    <h1>¿Quieres ser mi Valentín?</h1>
+    <div class="letter">
+        <h3>Karina, </h3>
+        <p>Mi amor, te amo muchísimo, desde que te he conocido me ha encantado saber más de ti, has alegrado mis días y
+            me has hecho muy feliz, eres una mujer maravillosa con quién me encanta pasar mis días y espero sea así por
+            siempre.
+        </p>
+        <p>
+            San Valentín no es la excepción, un día para celebrar nuestro amor, y me encantaria celebrarlo juntos, el
+            primero de muchos</p>
+
+    </div>
 
     <div class="gallery">
         <!-- Cambia las URLs de las imágenes -->
@@ -128,12 +152,12 @@
 
         function moveNoButton() {
             let x = Math.random() * (window.innerWidth - 100);
-            let y = Math.random() * (100);
+            let y = Math.random() * (10);
             noButton.style.left = x + 'px';
-            noButton.style.top = y + window.innerHeight + 500 + 'px';
+            noButton.style.top = y + 115 + 'rem';
 
             if (size > 5) {
-                size -= 5;
+                size -= 3;
                 noButton.style.fontSize = size + 'px';
                 noButton.style.padding = (size / 2) + 'px ' + size + 'px';
             }
